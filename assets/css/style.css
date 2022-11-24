@@ -205,12 +205,7 @@ table{
     border-collapse: collapse;
 }
 
-.indoor{
-    background-color: chartreuse;
-}
-.outdoor{
-    background-color: coral;
-}
+
 
 
 .nav{
@@ -303,6 +298,10 @@ nav .logo{
 
     }
     
+    .display{
+        width: auto;
+    }
+
     header{
         width: auto;
     }
