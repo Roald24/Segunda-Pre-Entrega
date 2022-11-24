@@ -166,22 +166,25 @@
 
 
 
-@keyframes mover {
+@keyframes mover{
     0%{
         transform: translate(0,0);
     }
     25%{
-        transform: translate(100px,0);
+        transform: translate(400px,0);
     }
     50%{
-        transform: translate(100px, 100px);
+        transform: translate(400px, 400px);
     }
     75%{
-        transform: translate(0,100px);
+        transform: translate(-400px, 400px);
     }
-
-    
+    100%{
+        transform: translate(0, -90px);
+    }
 }
+
+
 .ofertas h1{
     animation-duration: 2s;
     animation-name: aparecer;
@@ -245,4 +248,66 @@ table{
 th,td{
     border: solid 1px;
     padding: 5px;
+}
+
+.encabezado{
+    height: 200px;
+    background-image: linear-gradient(90deg, rgb(93, 209, 16), rgb(228, 101, 17));
+}
+
+.encabezado:hover{
+    height: 200px;
+    padding: 10px;
+    background-image: linear-gradient(90deg, rgb(93, 209, 16), rgb(228, 101, 17));
+    transition: 2s;
+}
+.encabezado h3{
+    margin: 10px;
+    height: 100px;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto1{
+    width: 300px;
+    padding: 10px;
+    border: 2px solid;
+    margin: 50px;
+}
+
+.texto1:hover{
+    transition: 2s;
+
+}
+
+
+.texto2{
+    width: 300px;
+    padding: 10px;
+    border: 2px solid;
+    margin: 50px;
+}
+
+.texto2:hover{
+    transition: 2s;
+    transform: scale(1.5);
+}
+
+
+
+.permiso{
+    width: 300px;
+    padding: 10px;
+    border: 2px solid;
+    margin: 50px;
+}
+
+
+.permiso{
+    animation-name: mover;
+    animation-duration: 6s;
 }
