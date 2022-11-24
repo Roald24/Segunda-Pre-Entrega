@@ -300,8 +300,13 @@ nav .logo{
         height: 100vh;
         transition:0.5s;
         z-index: 100;
+
     }
     
+    header{
+        width: auto;
+    }
+
     .fa-bars{
         visibility: visible;
     }
@@ -329,10 +334,17 @@ th,td{
 
 
 
-.encabezado{
-    height: 200px;
+header{
     background-image: linear-gradient(90deg, rgb(93, 209, 16), rgb(228, 101, 17));
+    width: auto;
+    padding: 20px;
 }
+
+
+
+
+
+
 
 .encabezado:hover{
     height: 200px;
