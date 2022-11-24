@@ -221,8 +221,11 @@ table{
     background-image: linear-gradient(90deg, rgb(93, 209, 16), rgb(228, 101, 17));
 }
 nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
     list-style-type: none;
-    display: flex; 
 }
 nav li a{
     color: rgb(0, 0, 0);
@@ -240,6 +243,44 @@ nav .logo{
     padding: 10px;
 }
 
+.fa-bars{
+    color: black;
+    font-size: 24px;
+    padding: 10px;
+    visibility: hidden;
+}
+
+
+
+
+
+@media(max-width:600px){
+    nav ul{
+        position: fixed;
+        top: 0;
+        left: -250px;
+        flex-direction: column;
+        background-image: linear-gradient(90deg, rgb(93, 209, 16), rgb(228, 101, 17));
+        width: 250px;
+        height: 100vh;
+        transition: 0.2s;
+        z-index: 100;
+    }
+    
+    .fa-bars{
+        visibility: visible;
+    }
+}
+
+
+.fa-bars:hover + nav ul{
+    left: 0;
+}
+
+nav ul:hover{
+    left: 0;
+}
+
 table{
     border: solid 1px;
     border-collapse: collapse;
@@ -250,7 +291,18 @@ th,td{
     padding: 5px;
 }
 
-.encabezado{
+
+
+
+
+
+
+
+
+
+
+
+/*.encabezado{
     height: 200px;
     background-image: linear-gradient(90deg, rgb(93, 209, 16), rgb(228, 101, 17));
 }
@@ -310,4 +362,5 @@ th,td{
 .permiso{
     animation-name: mover;
     animation-duration: 6s;
-}
+}*/ 
+
