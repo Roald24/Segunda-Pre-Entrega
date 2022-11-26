@@ -300,6 +300,9 @@ nav .logo{
         z-index: 100;
 
     }
+    .card{
+        position: relative;
+    }
     
     .display{
         width: auto;
@@ -308,6 +311,8 @@ nav .logo{
     header{
         width: auto;
     }
+
+
 
     .fa-bars{
         visibility: visible;
@@ -346,12 +351,15 @@ header{
 
 
 
+.card{
+    margin: 20px;
+    padding: 20px;
+}
 
 
-.encabezado:hover{
-    height: 200px;
-    padding: 10px;
-    background-image: linear-gradient(90deg, rgb(93, 209, 16), rgb(228, 101, 17));
+
+.principal:hover{
+    border: solid;
     transition: 2s;
 }
 .encabezado h3{
@@ -403,4 +411,9 @@ header{
 .permiso{
     animation-name: mover;
     animation-duration: 6s;
+}
+
+.video{
+    padding: 20px;
+    margin: 10px;
 }
